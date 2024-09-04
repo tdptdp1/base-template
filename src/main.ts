@@ -6,6 +6,8 @@ import App from './App.vue'
 import router from './router'
 // 引入创建pinia的函数
 import { createPinia } from 'pinia'
+// 注册svg图标
+import 'virtual:svg-icons-register'
 // 创建pinia实例
 const pinia = createPinia()
 // 创建app应用实例
