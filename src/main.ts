@@ -8,6 +8,8 @@ import router from './router'
 import { createPinia } from 'pinia'
 // 注册svg图标
 import 'virtual:svg-icons-register'
+//引入全局样式
+import '@/styles/index.scss'
 // 创建pinia实例
 const pinia = createPinia()
 // 创建app应用实例
