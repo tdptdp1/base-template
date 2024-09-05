@@ -12,3 +12,5 @@ vue3+Vite实现SVG组件自动加载icons目录下所有文件（svg组件）
 
 自定义注册全局组件插件
 
+二次封装axios
+
