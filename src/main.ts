@@ -8,6 +8,8 @@ import router from './router'
 import { createPinia } from 'pinia'
 // 注册svg图标
 import 'virtual:svg-icons-register'
+// 引入自定义插件对象：注册整个项目全局插件
+import gloalComponent from '@/utils/GlobalComponents'
 //引入全局样式
 import '@/styles/index.scss'
 // 创建pinia实例
@@ -16,6 +18,8 @@ const pinia = createPinia()
 const app = createApp(App)
 // 注册路由插件
 app.use(router)
+// 注册 gloalComponent自定义插件
+app.use(gloalComponent)
 // 注册pinia插件
 app.use(pinia)
 // 将app应用实例挂载到挂载点上
